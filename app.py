@@ -4,7 +4,7 @@ from PyQt5.QtGui import QIcon, QPixmap
 from PyQt5 import uic
 from PyQt5.QtCore import Qt
 from playback_utils import play_song, seek_forward, seek_backward, set_volume, scope
-from credentials1 import PATH
+from credentials import PATH
 
 sp = scope()
 
