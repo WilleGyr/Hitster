@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>720</width>
+    <height>880</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>3</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #282828</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <widget class="QLabel" name="SongLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>690</y>
+      <width>721</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>35</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #AB2C49; background-color:transparent</string>
+    </property>
+    <property name="text">
+     <string>Låt</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CoverLabel">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>240</y>
+      <width>461</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="StartaOmButton">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>90</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    color: black;
+    border: 2px solid #AB2C49;
+    border-radius: 20px;
+    background-color:#AB2C49;
+    padding: 5px;
+    }
+
+QPushButton:hover {
+    background-color: #812339;
+	border: 2px solid #812339;
+    }
+
+QPushButton:pressed {
+    border-style: inset;
+    background-color:#651729;
+	border: 2px solid #651729;
+    }</string>
+    </property>
+    <property name="text">
+     <string>Starta om</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="NyButton">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>10</y>
+      <width>221</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>31</pointsize>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    color: black;
+    border: 2px solid #AB2C49;
+    border-radius: 20px;
+    background-color:#AB2C49;
+    padding: 5px;
+    }
+
+QPushButton:hover {
+    background-color: #812339;
+	border: 2px solid #812339;
+    }
+
+QPushButton:pressed {
+    border-style: inset;
+    background-color:#651729;
+	border: 2px solid #651729;
+    }</string>
+    </property>
+    <property name="text">
+     <string>Ny låt</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="YearLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>110</y>
+      <width>641</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>80</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #AB2C49; background-color:transparent</string>
+    </property>
+    <property name="text">
+     <string>År</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="Line" name="Line">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>760</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ArtistLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>760</y>
+      <width>641</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #AB2C49; background-color:transparent</string>
+    </property>
+    <property name="text">
+     <string>Artist</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Spelas">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>400</y>
+      <width>641</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>50</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #AB2C49; background-color:transparent</string>
+    </property>
+    <property name="text">
+     <string>Låt spelas</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="KlarButton">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>10</y>
+      <width>221</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>31</pointsize>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    color: black;
+    border: 2px solid #AB2C49;
+    border-radius: 20px;
+    background-color:#AB2C49;
+    padding: 5px;
+    }
+
+QPushButton:hover {
+    background-color: #812339;
+	border: 2px solid #812339;
+    }
+
+QPushButton:pressed {
+    border-style: inset;
+    background-color:#651729;
+	border: 2px solid #651729;
+    }</string>
+    </property>
+    <property name="text">
+     <string>Klar</string>
+    </property>
+   </widget>
+   <zorder>Line</zorder>
+   <zorder>SongLabel</zorder>
+   <zorder>CoverLabel</zorder>
+   <zorder>StartaOmButton</zorder>
+   <zorder>NyButton</zorder>
+   <zorder>YearLabel</zorder>
+   <zorder>ArtistLabel</zorder>
+   <zorder>Spelas</zorder>
+   <zorder>KlarButton</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>720</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
