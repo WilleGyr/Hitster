@@ -32,7 +32,7 @@
 2. Log in with your Spotify account
 3. Click on **'Create an app'** and provide the required information
 4. After creation, you see your **CLIENT_ID** and you can click on ‘Show client secret` to unhide your **CLIENT_SECRET**
-5. Paste your **CLIENT_ID** and **SECRET_ID** into `credentials.py`
+5. Paste your **CLIENT_ID**, **SECRET_ID** and **REDIRECT_URI into `credentials.py`
 
 ### Usage
 1. Run ```csv_processor.py``` to create the CSV file containing all your songs.
