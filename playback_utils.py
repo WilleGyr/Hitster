@@ -1,6 +1,6 @@
 import spotipy, requests
 from spotipy.oauth2 import SpotifyOAuth
-from credentials1 import CLIENT_ID, CLIENT_SECRET, REDIRECT_URI, PATH
+from credentials import CLIENT_ID, CLIENT_SECRET, REDIRECT_URI, PATH
 
 def scope():
     # Spotify OAuth setup
